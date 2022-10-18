@@ -1,0 +1,30 @@
+<%- include('header'); -%>
+
+<main>
+  <section class="container">
+    <div class="row">
+
+<% wheekies.forEach( piggy => { %>
+  <div class="col-md p-4">
+    <a href="#" class="bio-link">
+      <div class="bio-link-card d-flex-column align-items-center text-center p-4">
+        <h2><%=piggy.name%></h2>
+        <h4><%=piggy.nickname%></h4>
+        <img class="img-fluid" src="<%=piggy.photo%>" />
+      </div>
+    </a>
+  </div>
+<% }); %>
+
+
+
+
+
+    </div>
+  </section>
+
+</main>
+
+
+
+<%- include('footer'); -%>

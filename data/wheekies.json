@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Bubba",
+    "nickname": "The Butt Wiggler",
+    "photo": "/images/bubba-1.png"
+  },
+  {
+    "name": "Forrest",
+    "nickname": "The Dark Rumbler",
+    "photo": "/images/forrest-1.png"
+  },
+  {
+    "name": "Mario",
+    "nickname": "The Crested Chomper",
+    "photo": "/images/mario-1.png"
+  }
+]

@@ -1,0 +1,42 @@
+<%- include('header'); -%>
+
+<main>
+  <section class="container">
+    <div class="row">
+
+      <div class="foods col-12 col-md-6">
+
+        <h2 class="foods-header">Click or Tap to Add:</h2>
+
+        <% menu.forEach( menuItem => { %>
+        <form class="food-list" action="/shopping" method="post">
+          <button type="submit" name="foodList" value="<%=menuItem%>"><%= menuItem %></button>
+        </form>
+
+        <% }); %>
+
+      </div>
+
+      <div class="shopping-list col-12 col-md-6">
+
+        <% if(shoppingItems) {shoppingItems.forEach( item => { %>
+        <form action="/delete" method="post">
+          <div class="item d-flex align-items-center">
+            <input onChange="this.form.submit()" name="checkbox" type="checkbox" value="<%= item._id %>">
+            <p><%= item.name %></p>
+          </div>
+        </form>
+        <% });} %>
+
+        <form class="shopping-input" action="/" method="post">
+          <input type="text" name="newItem" placeholder="Add Item" autocomplete="off" autofocus />
+          <button type="submit" name="list" value="shopping">+</button>
+        </form>
+
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<%- include('footer'); -%>

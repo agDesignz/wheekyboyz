@@ -1,0 +1,230 @@
+p {
+  margin: 0;
+}
+/* GET RESET FROM UC Davis projects */
+
+
+html {
+  min-height: 1000px;
+  font-family: Verdana, sans-serif;
+  color: #323232;
+}
+
+body {
+  background-color: #fffcf0;
+  font-family: 'ABeeZee', sans-serif;
+}
+
+.marker {
+  font-family: 'Permanent Marker', cursive;
+}
+
+.crete {
+  font-family: 'Crete Round', serif;
+}
+
+.abz {
+  font-family: 'ABeeZee', sans-serif;
+}
+
+header {
+  /* height: 100px; */
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 5%;
+  background-color: #ac242a;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  color: #ededed;
+}
+
+.navbar-brand {
+  margin: auto;
+}
+
+.navbar, .navbar-nav {
+  width: 100%;
+}
+
+.nav-logo {
+  margin: auto;
+  width: 100px;
+}
+
+.logo-text {
+  font-family: 'Permanent Marker', cursive;
+  margin: 15px;
+  font-size: 1.5rem;
+}
+
+.navbar-toggler {
+  margin: 10px auto;
+}
+
+.navbar a, .navbar-toggler-icon, .navbar-dark .navbar-nav .nav-link {
+  color: #ededed;
+}
+
+.navbar a:hover, .navbar-dark .navbar-nav .nav-link:hover {
+  color: #ededed88;
+}
+
+.nav-link {
+  font-family: 'ABeeZee', sans-serif;
+  font-size: 1.2rem;
+}
+
+/*   FOOTER   */
+footer {
+  padding: 5%;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+/*  MAIN PAGE  */
+main {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/*    BIOS    */
+.bio-link {
+  text-decoration: none;
+}
+
+.bio-link-card {
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  background-color: #fcf4e3;
+  color: #a94e11;
+  text-decoration: none;
+  transition: opacity .4s;
+}
+
+.bio-link-card:hover {
+  opacity: .7;
+}
+
+/*     INFO    */
+.info h3 {
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.info figcaption {
+  max-width: 400px;
+  padding: .4rem 0;
+}
+
+/*     SHOPPING LIST     */
+.shopping-list {
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  padding: 10px 20px;
+}
+
+.close {
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+input:checked+p {
+  text-decoration: line-through;
+  text-decoration-color: #121212;
+  opacity: .5;
+}
+
+input[type="checkbox"] {
+  margin: 20px;
+}
+
+.foods-header {
+  width: 100%;
+  text-align: center;
+}
+
+.foods {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.food-list {
+  display: flex;
+  padding: 10px;
+}
+
+.food-list button {
+  box-sizing: border-box;
+  width: 125px;
+  height: 75px;
+  font-size: 1.2rem;
+  color: #ededed;
+  background-color: #3b9534;
+  border: 0;
+  border-radius: 10px;
+}
+
+.item p {
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #323232;
+}
+
+.shopping-input {
+  text-align: center;
+  margin-left: 20px;
+  border-bottom: 1px solid #2d2d2d;
+}
+
+.shopping-input button {
+  box-sizing: border-box;
+  min-height: 30px;
+  width: 38px;
+  border-radius: 10px;
+  border-color: transparent;
+  background-color: #666;
+  color: #fff;
+  font-size: 1.5rem;
+  /* padding-bottom: 6px; */
+  border-width: 0;
+}
+
+.shopping-input input[type="text"] {
+  text-align: center;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  width: 313px;
+}
+
+.shopping-input input[type="text"]:focus {
+  outline: none;
+  /* box-shadow: inset 0 -3px 0 0 #66666666; */
+}
+
+::placeholder {
+  color: grey;
+  opacity: 1;
+}
+
+@media all and (min-width: 768px) {
+  .nav-logo {
+    margin: auto;
+    width: 160px;
+  }
+
+  .logo-text {
+    margin: 15px;
+    font-size: 2.5rem;
+  }
+}
