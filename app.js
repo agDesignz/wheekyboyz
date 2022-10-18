@@ -20,7 +20,7 @@ app.use(express.static("public"));
 app.set("view engine", "ejs");
 
 ///////////    MONGOOSE CONNECTION
-mongoose.connect("mongodb+srv://agArt:30452ndAveS@udemycluster.oihtb.mongodb.net/wheekyShopping?retryWrites=true&w=majority");
+mongoose.connect("mongodb+srv://agArt:<password>@udemycluster.oihtb.mongodb.net/wheekyShopping?retryWrites=true&w=majority");
 
 app.get("/", (req, res) => {
   res.render("main");
